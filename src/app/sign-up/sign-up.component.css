@@ -1,0 +1,104 @@
+
+
+.container {
+    text-align: left;
+    padding: 0 200px;
+    background-color: #282828;
+}
+
+.container input {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    
+}
+
+.inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    width: 48%;
+    margin-right: 0%;
+}
+
+
+.inner form input {
+   border: 0;
+   padding: 15px 0;
+   font-size: 20px;
+   width: 100%;
+   background:#797979;
+   margin-right: 10px;
+   font-family: 'Montserrat' ,sans-serif;
+   font-weight: normal;
+   color: white;
+}
+
+.highlight {
+    margin-top: 10px;
+    color: #f2f542;
+    font-size: 20px;
+}
+
+.inner select {
+    border: 0;
+    padding: 15px 0;
+    font-size: 20px;
+    width: 48%;
+    max-height: 54px;
+    background:#797979;
+    color: white;
+    font-family: 'Montserrat' ,sans-serif;
+    
+ }
+
+ ::placeholder {
+     color: white;
+     font-size: 20px;
+}
+
+.inner option {
+    color: white;
+    font-size: 20px;
+}
+
+
+.clearfix button {
+    width: 100%;
+    background-color: #D02035;
+    color: white;
+    padding: 15px 0;
+    margin: 0%;
+    border: none;
+    font-family: 'Montserrat' ,sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Montserrat' ,sans-serif;
+    font-weight: 900;
+    font-size: 65px;
+    color: white;
+}
+
+p {
+    font-family: 'Montserrat' ,sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        text-align: left;
+        padding: 0;
+    }
+
+    h1 {
+        font-family: 'Montserrat' ,sans-serif;
+        font-weight: 900;
+        font-size: 25px;
+        color: white;
+    }
+}

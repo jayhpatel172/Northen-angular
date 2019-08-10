@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    background: #282828;
+}
+.container {
+    text-align: left;
+    padding: 0 200px 0 200px;
+    background-color: #282828;
+}
+h1 {
+    font-family: 'Montserrat' ,sans-serif;
+    font-size: 65px;
+    color: white;
+}
+
+hr {
+    width: 300px;
+    text-align: left;
+    margin: 0;
+    height: 10px;
+    background: #D02035;
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        text-align: left;
+        padding: 0;
+    }
+
+    h1 {
+        font-family: 'Montserrat' ,sans-serif;
+        font-weight: 900;
+        font-size: 35px;
+        color: white;
+    }
+}

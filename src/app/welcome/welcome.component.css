@@ -1,0 +1,26 @@
+.container {
+    padding: 20px 200px 0 200px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: white;
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        text-align: left;
+        padding: 0;
+    }
+
+}

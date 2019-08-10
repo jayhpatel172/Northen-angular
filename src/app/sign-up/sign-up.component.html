@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap" rel="stylesheet">
+
+ 
+<div class="container" *ngIf="!show">
+  
+    <p>Prepare your career with a project management, Web-Development, Graphic Design, or Degital Marketing Intership at Northern.</p>
+    <br>
+
+    <div class="inner">
+      <!-- <input class="i1" placeholder="Enter Email" type="email" name="email" ngModel email="true" required> -->
+      <form name="form">
+        <div class="form-group"  [formGroup]="form">
+          <input class="form-control" placeholder="Enter Email" type="text" formControlName="email"
+            [ngClass]="{'is-invalid': form.get('email').touched && form.get('email').invalid}" />
+          <div *ngIf="form.get('email').touched && form.get('email').invalid" class="invalid-feedback">
+            <div class="highlight" *ngIf="form.get('email').errors.required">Email name is required</div>
+            <div class="highlight" *ngIf="form.get('email').errors.email">Email must be a valid email address !!!</div>
+          </div>
+        </div>
+      </form>
+      <br>
+      <br>
+
+      <select type="position"> 
+          <option value="Developer">Developer</option>
+          <option value="Designer">Designer</option>
+          <option value="Quality Assurance">Quality Assurance</option>
+          <option value="HR">HR</option>
+        </select>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="clearfix">
+      <button type="button" routerLink='welcome' (click)="toggle()">SIGN UP</button>
+    </div>
+    </div>
+
+  </html>
+
+
