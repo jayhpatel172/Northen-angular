@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap" rel="stylesheet">
 
  
-<div class="container" *ngIf="!show">
-  
+  <div class="container" *ngIf="!show">
+    
     <p>Prepare your career with a project management, Web-Development, Graphic Design, or Degital Marketing Intership at Northern.</p>
     <br>
 
@@ -24,21 +24,22 @@
       <br>
 
       <select type="position"> 
-          <option value="Developer">Developer</option>
-          <option value="Designer">Designer</option>
-          <option value="Quality Assurance">Quality Assurance</option>
-          <option value="HR">HR</option>
-        </select>
+        <option value="Position">Your Position</option>
+        <option value="Developer">Developer</option>
+        <option value="Designer">Designer</option>
+        <option value="Quality Assurance">Quality Assurance</option>
+        <option value="HR">HR</option>
+      </select>
     </div>
 
     <br>
     <br>
 
-    <div class="clearfix">
-      <button type="button" routerLink='welcome' (click)="toggle()">SIGN UP</button>
-    </div>
-    </div>
+    
+      <button type="button" routerLink='welcome' (click)="toggle()" [disabled]="!form.valid">SIGN UP</button>
+   
+  </div>
 
-  </html>
+</html>
 
 

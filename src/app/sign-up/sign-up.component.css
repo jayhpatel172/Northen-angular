@@ -19,7 +19,7 @@
 }
 
 form {
-    width: 48%;
+    width: 49%;
     margin-right: 0%;
 }
 
@@ -46,7 +46,7 @@ form {
     border: 0;
     padding: 15px 0;
     font-size: 20px;
-    width: 48%;
+    width: 49%;
     max-height: 54px;
     background:#797979;
     color: white;
@@ -65,7 +65,7 @@ form {
 }
 
 
-.clearfix button {
+button {
     width: 100%;
     background-color: #D02035;
     color: white;
