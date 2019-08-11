@@ -19,21 +19,21 @@
 }
 
 form {
-    width: 49%;
+    width: 48%;
     margin-right: 0%;
 }
 
 
 .inner form input {
    border: 0;
-   padding: 15px 0;
+   padding: 15px 0 15px 15px;
    font-size: 20px;
    width: 100%;
-   background:#797979;
+   background:#e3e0d8;
    margin-right: 10px;
    font-family: 'Montserrat' ,sans-serif;
    font-weight: normal;
-   color: white;
+
 }
 
 .highlight {
@@ -44,26 +44,26 @@ form {
 
 .inner select {
     border: 0;
-    padding: 15px 0;
-    font-size: 20px;
+    padding: 15px;
+    font-size: 16px;
     width: 49%;
     max-height: 54px;
-    background:#797979;
-    color: white;
+    background:#e3e0d8;
+    color: #797979;
     font-family: 'Montserrat' ,sans-serif;
-    
- }
-
- ::placeholder {
-     color: white;
-     font-size: 20px;
+    font-weight: bold;
 }
 
-.inner option {
-    color: white;
-    font-size: 20px;
+.inner select option {
+  font-weight: bold;
 }
 
+
+::placeholder {
+    color: #797979;
+    font-size: 16px;
+    font-weight: bold;
+}
 
 button {
     width: 100%;
@@ -89,16 +89,32 @@ p {
     color: white;
 }
 
+/* small screen sizes */
+
 @media only screen and (max-width: 600px) {
     .container {
-        text-align: left;
-        padding: 0;
+      text-align: center;
+      padding: 25px;
     }
 
     h1 {
-        font-family: 'Montserrat' ,sans-serif;
-        font-weight: 900;
-        font-size: 25px;
-        color: white;
+      font-family: 'Montserrat' ,sans-serif;
+      font-weight: 900;
+      font-size: 25px;
+      color: white;
+    }
+
+    .inner {
+      width: 100%;
+      display: grid;
+      justify-content: center;
+    }
+
+    .inner form input {
+      width: 200%;
+    }
+
+    .inner select {
+      width: 100%;
     }
 }

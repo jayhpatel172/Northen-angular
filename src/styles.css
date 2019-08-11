@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+
 body {
     margin: 0;
     background: #282828;
@@ -22,6 +22,8 @@ hr {
     background: #D02035;
     border: none;
 }
+
+/* Small screen sizes */
 
 @media only screen and (max-width: 600px) {
     .container {
