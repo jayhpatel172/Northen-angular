@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap" rel="stylesheet">
 
- 
-  <div class="container" *ngIf="!show">
-    
-    <p>Prepare your career with a project management, Web-Development, Graphic Design, or Degital Marketing Intership at Northern.</p>
-    <br>
+
+<div class="container" *ngIf="!show">
+
+	<p>Prepare your career with a project management, Web-Development, Graphic Design, or Degital Marketing Intership at Northern.</p>
+	<br>
 
     <div class="inner">
       <!-- <input class="i1" placeholder="Enter Email" type="email" name="email" ngModel email="true" required> -->
@@ -36,10 +36,9 @@
     <br>
 
     
-      <button type="button" routerLink='welcome' (click)="toggle()" [disabled]="!form.valid">SIGN UP</button>
+      <button type="button" routerLink='welcome' (click)="onSubmit(); toggle()" [disabled]="!form.valid">{{ loading ? "Submitting.." : "Sign Up Now" }}</button>
+
    
   </div>
 
 </html>
-
-
